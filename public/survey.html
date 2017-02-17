@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manager Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Manager Event Survey</h1>
+      <form action="https://mgr-survey.mybluemix.net/api/survey-post" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <p>How satisfied are you with the event?</p>
+        <input type="radio" name="sat" value="4">4 - Very Satisfied<br>
+        <input type="radio" name="sat" value="3">3 - Satisfied<br>
+        <input type="radio" name="sat" value="2">2 - Dissatisfied<br>
+        <input type="radio" name="sat" value="1">1 - Very Dissatisfied<br>
+        <p>Would you attend an event like this again?</p>
+        <input type="radio" name="again" value="Y">Yes<br>
+        <input type="radio" name="again" value="N">No<br>
+        <p>Comments</p>
+        <textarea name="comments" rows="5" cols="30" placeholder="Comments"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
